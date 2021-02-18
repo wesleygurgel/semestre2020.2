@@ -23,7 +23,9 @@ class LeftFragment : Fragment() {
 
     fun setText(contador: Int){
 
-        meutexto = view?.findViewById<TextView>(R.id.txt_left)
+        val v = view
+        v?.findViewById<TextView>(R.id.txt_left)
+        
 
     }
 

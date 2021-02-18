@@ -11,9 +11,15 @@ import androidx.fragment.app.FragmentTransaction
 
 class MainActivity : AppCompatActivity(), CenterFragment.ChangeTextListener {
 
+    private var textoEsquerda: LeftFragment? = null
+    private var textoDireita: RightFragment? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        textoEsquerda = supportFragmentManager.findFragmentById(R.id.left_fragment) as LeftFragment
+        textoDireita = supportFragmentManager.findFragmentById(R.id.right_fragment) as RightFragment
 
         val fm : FragmentManager = supportFragmentManager
 
@@ -27,7 +33,10 @@ class MainActivity : AppCompatActivity(), CenterFragment.ChangeTextListener {
 
     }
 
-    override fun changeText(texto: Int) {
+    override fun changeText(contador: Int) {
+
+        textoEsquerda?.setText(contador)
+        textoDireita?.setText(contador)
 
     }
 

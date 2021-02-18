@@ -20,5 +20,11 @@ class RightFragment : Fragment() {
         return v
     }
 
+    fun setText(contador: Int){
+
+        val v = view
+        v?.findViewById<TextView>(R.id.txt_left)
+
+    }
 
 }
