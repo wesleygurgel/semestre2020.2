@@ -25,7 +25,7 @@ class LeftFragment : Fragment() {
 
         val v = view
         v?.findViewById<TextView>(R.id.txt_left)
-        
+
 
     }
 
