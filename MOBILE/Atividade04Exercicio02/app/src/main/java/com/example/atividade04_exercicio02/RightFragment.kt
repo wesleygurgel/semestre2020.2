@@ -9,22 +9,40 @@ import androidx.fragment.app.Fragment
 
 class RightFragment : Fragment() {
 
+    private var txtCount: TextView? = null
+
+    private var count: Int = 0
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var v = inflater.inflate(R.layout.right_fragment, container, false)
-        v.findViewById<TextView>(R.id.txt_right)
+        val view = inflater.inflate(R.layout.right_fragment, container, false)
 
-        return v
+        txtCount = view.findViewById(R.id.txt_right)
+
+        if (savedInstanceState != null){
+            this.count = savedInstanceState.getInt("count")
+        }
+
+        txtCount!!.text = count.toString()
+
+        return view
     }
 
-    fun setText(contador: Int){
 
-        val v = view
-        v?.findViewById<TextView>(R.id.txt_left)
 
+    fun increment(){
+        count++
+
+        txtCount!!.text = count.toString()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        outState.putInt("count", count)
     }
 
 }

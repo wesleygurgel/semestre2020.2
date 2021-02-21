@@ -1,5 +1,6 @@
 package com.example.atividade04_exercicio02
 
+import android.app.Activity
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,7 +12,6 @@ import java.lang.RuntimeException
 
 class CenterFragment : Fragment(), View.OnClickListener {
 
-    var contador: Int = 0
     var listener: ChangeTextListener? = null
 
     override fun onAttach(context: Context) {
@@ -31,22 +31,25 @@ class CenterFragment : Fragment(), View.OnClickListener {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var v = inflater.inflate(R.layout.center_fragment, container, false)
+        val view = inflater.inflate(R.layout.center_fragment, container, false)
 
-        v.findViewById<Button>(R.id.frame_button).setOnClickListener(this)
+        val button = view.findViewById<Button>(R.id.incrementar_button).setOnClickListener(this)
 
-        return v
-    }
 
-    override fun onClick(v: View?) {
-
-        listener?.changeText(contador)
+        return view
 
     }
+
+    override fun onClick(v: View) {
+        listener!!.increment()
+    }
+
 
     interface ChangeTextListener{
-        fun changeText(texto: Int)
+        fun increment()
     }
+
+
 
 
 }
