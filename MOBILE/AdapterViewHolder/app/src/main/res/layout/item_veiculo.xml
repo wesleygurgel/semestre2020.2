@@ -37,8 +37,8 @@
         android:id="@+id/txtCombustivel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtAno"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtAno"
         tools:text="Gasolina/Etanol" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
