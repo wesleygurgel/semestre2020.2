@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d13d5b76-8685-4ed4-bacc-7d7ff144eea0" name="Default Changelist" comment="" />
+    <list default="true" id="d13d5b76-8685-4ed4-bacc-7d7ff144eea0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Atividade04Exercicio02/app/src/main/java/com/example/atividade04_exercicio02/LeftFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade04Exercicio02/app/src/main/java/com/example/atividade04_exercicio02/LeftFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecyclerView/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RecyclerView/.idea/gradle.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +22,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CURSO_UFRN" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -32,5 +36,11 @@
       <updated>1613404802874</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2180" y="190" key="FileChooserDialogImpl" timestamp="1614950730065">
+      <screen x="1600" y="0" width="1600" height="870" />
+    </state>
+    <state x="2180" y="190" key="FileChooserDialogImpl/0.0.1600.870/1600.0.1600.870@1600.0.1600.870" timestamp="1614950730065" />
   </component>
 </project>
