@@ -20,12 +20,11 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1"
+        android:layout_marginTop="15dp"
         android:onClick="next"
-    />
+        android:text="1" />
 
     <TextView
         android:id="@+id/txtMensagem"
