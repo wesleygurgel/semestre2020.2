@@ -40,14 +40,11 @@ class LeftFragment : Fragment() {
         txtCount!!.text = count.toString()
     }
 
-<<<<<<< HEAD
+
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-=======
         val v = view
         v?.findViewById<TextView>(R.id.txt_left)
-
->>>>>>> master
 
         outState.putInt("count", count)
     }
